@@ -90,7 +90,7 @@ basic.forever(function () {
     }
 })
 
-//% color="#61CBF4" icon="\uf075"
+//% color="#C4C80E" icon="\uf05b"
 //% block="Buttonpad"
 //% block.loc.nl="Buttonpad"
 namespace ButtonPad {
