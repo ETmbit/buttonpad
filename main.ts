@@ -58,30 +58,37 @@ basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P9) == 1 && ETpad != Pad.TopLeft) {
         ETpad = Pad.TopLeft
         if (buttonpadTopLeftHandler) buttonpadTopLeftHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P8) == 1 && ETpad != Pad.TopRight) {
         ETpad = Pad.TopRight
         if (buttonpadTopRightHandler) buttonpadTopRightHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P12) == 1 && ETpad != Pad.Ok) {
         ETpad = Pad.Ok
         if (buttonpadOkHandler) buttonpadOkHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P13) == 1 && ETpad != Pad.Up) {
         ETpad = Pad.Up
         if (buttonpadUpHandler) buttonpadUpHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P16) == 1 && ETpad != Pad.Left) {
         ETpad = Pad.Left
         if (buttonpadLeftHandler) buttonpadLeftHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P15) == 1 && ETpad != Pad.Down) {
         ETpad = Pad.Down
         if (buttonpadDownHandler) buttonpadDownHandler()
+        basic.pause(100)
     } else
     if (pins.digitalReadPin(DigitalPin.P14) == 1 && ETpad != Pad.Right) {
         ETpad = Pad.Right
         if (buttonpadRightHandler) buttonpadRightHandler()
+        basic.pause(100)
     } else {
         if (ETpad != Pad.None) {
             ETpad = Pad.None
