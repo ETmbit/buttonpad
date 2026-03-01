@@ -55,6 +55,7 @@ enum Pad {
 let ETpad = Pad.None
 
 basic.forever(function () {
+serial.writeNumber(ETpad)
     if (pins.digitalReadPin(DigitalPin.P9) == 1 && ETpad != Pad.TopLeft) {
         ETpad = Pad.TopLeft
         if (buttonpadTopLeftHandler) buttonpadTopLeftHandler()
